@@ -6,10 +6,10 @@
 </head>
 <body>
     <a href="/">Show All Posts</a><br />
-    Post :<span th:text="${message.content}" ></span><br />
-    Posted Date :<span th:text="${message.posteddate}" ></span><br />
-    Sent By :<span th:text="${message.sentby}" ></span><br />
-    <a th:href="@{/delete/{id}(id=${message.id})}">Delete this post</a>
+    Post :<span th:text="${messagepost.content}" ></span><br />
+    Posted Date :<span th:text="${messagepost.posteddate}" ></span><br />
+    Sent By :<span th:text="${messagepost.sentby}" ></span><br />
+    <a th:href="@{/delete/{id}(id=${messagepost.id})}">Delete this post</a>
 <
 </body>
 </html>

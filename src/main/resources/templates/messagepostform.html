@@ -11,7 +11,7 @@
         th:object="${messagepost}"
         method="post">
         <input type="hidden" th:field="*{id}" />
-        Message To Post (280 cahrs max):<input type="text" th:field="*{content}" />
+        Message To Post (280 char max):<input type="text" th:field="*{content}" />
         <span th:if="${#fields.hasErrors('content')}"
             th:errors="*{content}"></span><br />
         Posted Date (mm/dd/yyyy) :<input type="text" th:field="*{posteddate}" />
